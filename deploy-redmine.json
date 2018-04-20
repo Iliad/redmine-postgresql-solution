@@ -2,7 +2,7 @@
   "kind": "Deployment",
   "metadata": {
     "labels": {
-        "app": "{{.REDMINE_IMAGE}}",
+        "app": "{{.REDMINE_DEPLOY_NAME}}-{{.REDMINE_DEPLOY_HASH}}",
         "owner": "{{.OWNER}}"
     },
     "name": "{{.REDMINE_DEPLOY_NAME}}-{{.REDMINE_DEPLOY_HASH}}"
