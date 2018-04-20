@@ -56,20 +56,8 @@
                 "memory": "156Mi"
               }
             },
-            "volumeMounts": [
-              {
-                "mountPath": "{{.REDMINEPATH}}",
-                "name": "{{.VOLUME}}",
-                "subPath": "{{.REDMINE_DEPLOY_NAME}}-{{.REDMINE_DEPLOY_HASH}}{{.REDMINEPATH}}"
-              }
-            ]
           }
         ],
-        "volumes": [
-          {
-            "name": "{{.VOLUME}}"
-          }
-        ]
       }
     }
   }
