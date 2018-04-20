@@ -52,8 +52,8 @@
             "name": "{{.REDMINE_DEPLOY_NAME}}",
             "resources": {
               "limits": {
-                "cpu": "200m",
-                "memory": "156Mi"
+                "cpu": 200,
+                "memory": 156
               }
             },
           }
