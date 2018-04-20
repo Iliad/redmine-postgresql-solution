@@ -2,7 +2,7 @@
     "kind": "Service",
     "metadata": {
         "labels": {
-    	    "app": "{{.PG_IMAGE}}",
+    	    "app": "{{.PG_DEPLOY_NAME}}-{{.PG_DEPLOY_HASH}}",
             "owner": "{{.OWNER}}"
         },
         "name": "{{.PG_SVC_NAME}}-{{.PG_SVC_HASH}}"
