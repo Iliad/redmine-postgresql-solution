@@ -48,8 +48,8 @@
             "name": "{{.PG_DEPLOY_NAME}}",
             "resources": {
               "limits": {
-                "cpu": 100,
-                "memory": 128
+                "cpu": "100m",
+                "memory": "128Mi"
               }
             }
           }
