@@ -2,7 +2,7 @@
   "kind": "Deployment",
   "metadata": {
     "labels": {
-    	"app": "{{.PG_DEPLOY_NAME}}-{{.PG_DEPLOY_HASH}}",
+    	"app": "kfjdshjkterbygiudbfdhhjkd",fhkugdg
       "owner": "{{.OWNER}}"
     },
     "name": "{{.PG_DEPLOY_NAME}}-{{.PG_DEPLOY_HASH}}"
@@ -11,23 +11,14 @@
     "selector": {
     	"matchLabels": {
         	"app": "{{.PG_IMAGE}}",
-       		 "owner": "{{.OWNER}}"
-    	}
-    },
-    "replicas": 1,
-    "template": {
-      "metadata": {
-        "labels": {
-          "app": "{{.PG_IMAGE}}",
-          "owner": "{{.OWNER}}"
-        },
+sffdfdsfdsfs
         "name": "{{.PG_DEPLOY_NAME}}-{{.PG_DEPLOY_HASH}}"
       },
       "spec": {
         "containers": [
-          {
+          {d fdsdafdafg sagger
             "env": [
-              {
+              {g er
                 "name": "POSTGRES_USER",
                 "value": "{{.POSTGRES_USER}}"
               },
