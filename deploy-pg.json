@@ -52,20 +52,22 @@
                 "memory": "100Mi"
               }
             },
+            {{if .VOLUME}}
             "volumeMounts": [
               {
                 "mountPath": "{{.PGDATA}}",
                 "name": "{{.VOLUME}}",
                 "subPath": "{{.PG_DEPLOY_NAME}}-{{.PG_DEPLOY_HASH}}{{.PGDATA}}"
               }
-            ]
+            ]{{end}}
           }
-        ],
+        ]{{if .VOLUME}},
         "volumes": [
           {
             "name": "{{.VOLUME}}"
           }
         ]
+        {{end}}
       }
     }
   }
